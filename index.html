@@ -30,6 +30,15 @@ https://templatemo.com/tm-520-highway
 
 <body>
 
+    <div id="preloader">
+        <div class="loader-container">
+          <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+          </div>
+        </div>
+    </div>
+
     <nav>
         <div class="logo">
             <!-- <a href="index.html">High<em>way</em></a> -->
@@ -46,7 +55,6 @@ https://templatemo.com/tm-520-highway
         <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
-
                 <div class="logo-icon">
                     <img src="../2 z animacją/img/logo_signature_white2.png" alt="">
                 </div>
@@ -453,6 +461,15 @@ https://templatemo.com/tm-520-highway
             $(this).addClass('active').siblings().removeClass('active');
         })
     })
+</script>
+
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener ("load", function(){
+        loader.style.display = "none";
+    })
+
+
 </script>
 
     
